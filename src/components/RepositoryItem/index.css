@@ -1,0 +1,48 @@
+.each-repo {
+  background-color: #f8f8ff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px; /* Add margin to create space between repository items */
+  width: 250px; /* Set a fixed width for each repository item */
+}
+
+.avatar-img {
+  height: 40px;
+  width: 40px;
+}
+
+.name {
+  color: #e73959;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sub-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.star {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px; /* Adjust margin */
+}
+
+.count {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 15px;
+  margin-top: 15px; /* Add margin-top to adjust vertical alignment */
+}
+
+@media screen and (min-width: 769px) {
+  .each-repo {
+    width: calc(33.33% - 20px);
+    padding-top: 20px; /* Adjust width for larger screens */
+  }
+}

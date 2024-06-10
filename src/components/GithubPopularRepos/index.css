@@ -1,0 +1,49 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-heading {
+  font-family: 'Lobster';
+  font-weight: bold;
+  font-size: 25px;
+  color: #0f172a;
+}
+
+.languages-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.repos-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .repos-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.failure-view {
+  height: 50%;
+  width: 60%;
+}
+
+.failure-heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: bold;
+}
